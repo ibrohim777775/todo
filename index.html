@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo App</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header>
+    <h1 class="title">ToDo App</h1>
+  </header>
+  <main>
+    <div class="container">
+      <div class="todo">
+        <div class="add__item">
+          <button id="addItem">Add</button>
+        </div>
+        <table class="table">
+          <thead>
+            <th class="table__head">Todo name</th>
+            <th class="table__head">Todo comment</th>
+            <th class="table__head">Todo date</th>
+            <th class="table__head">Status</th>
+            <th class="table__head">Options</th>
+          </thead>
+          <tbody id="table__body">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  <form id="todoForm">
+    <div class="todoForm__inners">
+      <div class="input__box">
+        <label for="name">Todo name</label>
+        <input id="name" type="text">
+      </div>
+      <div class="input__box">
+        <label for="comment">Todo comment</label>
+        <input id="comment" type="text">
+      </div>
+      <div class="input__box">
+        <label for="date">Todo date</label>
+        <input id="date" type="number">
+      </div>
+      <p class="error__text"></p>
+      <div class="form__btn">
+        <button id="submitItems" type="submit"> Add todo list</button>
+        <button id="closeForm" type="button">Close form</button>
+      </div>
+    </div>
+  </form>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
